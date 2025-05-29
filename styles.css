@@ -1,9 +1,7 @@
 :root {
-  --color1: rgb(219, 144, 5);
-  --color2: rgba(23, 189, 83, .0788);
-  --color3: rgba(11, 194, 211, .623);
   --orangeColor: #F5C273;
   --blueColor: #346373;
+  --white: #fff;
   --fondo: #f2f2f2;
   --titulos: 33px;
   --margenes: 60px;
@@ -27,10 +25,9 @@ img {
   vertical-align: top;
 }
 
-/****************** Header ******************/
+/***************************************************************** Header ******************************************************************************************************/
 header {
   width: 100%;
-  height: 600px;
   background: var(--orangeColor)
 }
 
@@ -42,15 +39,15 @@ nav {
 }
 
 .nav1 {
-  background: transparent;
+  background: var(--orangeColor);
   height: 80px;
   color: var(--blueColor);
 }
 
 .nav2 {
   background: var(--fondo);
+  color: var(--blueColor);
   height: 80px;
-  color: #000;
 }
 
 .contenedor-nav {
@@ -92,12 +89,17 @@ nav .enlaces a:hover {
   padding: 23.5px 20px;
 }
 
+/***************************************************************** Main ******************************************************************************************************/
+
 .textos {
   width: 100%;
   height: 100%;
+  padding-top: 150px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: var(--orangeColor);
   align-items: center;
   color: var(--blueColor);
   overflow: hidden;
@@ -105,15 +107,49 @@ nav .enlaces a:hover {
 }
 
 .textos>h1 {
-  font-size: 120px;
+  font-size: 80px;
+  margin-bottom: 30px;
 }
 
-.textos>h2 {
-  font-family: 30px;
+.textos p{
+  font-size: 20px;
+}
+
+.description1 {
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
   font-weight: 300;
+  margin-bottom: 25px;
 }
 
-/******************** Main *********************/
+.description2 {
+  margin-left: 60px;
+  font-size: 20px;
+  margin-right: 60px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.description3 {
+  font-size: 20px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  margin-right: 60px;
+  font-weight: 100;
+}
+
+.description4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.texto_instrucciones {
+  font-size: 20px;
+  font-weight: 100;
+}
 
 .hidden {
   overflow: hidden;
@@ -132,11 +168,24 @@ nav .enlaces a:hover {
 
 .contenedor {
   margin: auto;
-  padding: var(--margenes) 0;
   width: 90%;
+  padding-top: 40px;
+  padding-bottom: 10px;
   max-width: 1000px;
   text-align: center;
   overflow: hidden;
+}
+
+.contenedor_text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--blueColor);
+  overflow: hidden;
+  text-align: center;
 }
 
 .contenedor h3 {
@@ -145,10 +194,67 @@ nav .enlaces a:hover {
   margin-bottom: var(--espacios);
 }
 
-.contenedor p {
-  font-size: var(--subtitulos);
-  font-weight: 300;
+.contenedor h4 {
+  font-size: 18px;
   color: var(--blueColor);
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.contenedor p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 100;
+  color: var(--blueColor);
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.contenedor-lista {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.contenedor-lista ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contenedor-lista ul {
+  list-style-position: outside;
+  padding-left: 1.5em;
+  color: var(--blueColor);
+}
+.contenedor-total{
+  width: 100%;
+  height: auto;
+  background: var(--fondo);
+}
+
+.contenedor-imagen {
+  width: 50%;
+  height: auto;
+  display: block;    
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background: var(--fondo);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.contenedor-imagen img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .after::after {
@@ -159,7 +265,6 @@ nav .enlaces a:hover {
   width: 100px;
   height: 2px;
   background: var(--blueColor);
-  margin-bottom: var(--espacios-contenido);
 }
 
 .card {
@@ -192,7 +297,7 @@ nav .enlaces a:hover {
 }
 
 
-.about {
+.competitivo {
   background: var(--orangeColor);
   height: auto;
 }
@@ -203,6 +308,10 @@ nav .enlaces a:hover {
   justify-content: space-between;
   margin: auto;
   flex-wrap: wrap;
+}
+
+.orange {
+  background: var(--orangeColor);
 }
 
 .botones-work {
@@ -260,11 +369,18 @@ footer {
   width: 100%;
 }
 
-/******************** Responsive *********************/
+/***************************************************************** Responsive ******************************************************************************************************/
 
 @media screen and (max-width:700px) {
+
+  .nav1 {
+    background: var(--orangeColor);
+    height: 80px;
+    color: var(--blueColor);
+  }
+  
   .nav2 {
-    color: #fff;
+    color: var(--blueColor);
   }
 
   .icono {
@@ -293,17 +409,122 @@ footer {
     color: #fff;
   }
 
+  .textos {
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    background: var(--orangeColor);
+    align-items: center;
+    color: var(--blueColor);
+    overflow: hidden;
+    text-align: center;
+  }
+
   .textos>h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
-  .textos>h2 {
-    font-size: 35px;
+  .textos p{
+    font-size: 14px;
   }
 
+  .description1 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+
+  .description3 {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+    font-weight: 100;
+  }
   .content-card {
     width: 48%;
     margin-bottom: var(--margenes);
+  }
+
+  .contenedor {
+    margin: auto;
+    width: 90%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .contenedor_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blueColor);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .contenedor h3 {
+    font-size: var(--titulos);
+    color: var(--blueColor);
+    margin-bottom: var(--espacios);
+  }
+
+  .contenedor h4 {
+    font-size: 18px;
+    color: var(--blueColor);
+    margin-bottom: 15px;
+    font-weight: 100;
+  }
+
+  .contenedor p {
+    font-size: var(--subtitulos);
+    margin-bottom: 15px;
+    font-weight: 100;
+    color: var(--blueColor);
+  }
+
+  .contenedor-lista {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-lista ul li {
+    font-size: var(--subtitulos);
+    margin-bottom: 10px;
+  }
+
+  .contenedor-lista ul {
+    list-style-position: outside;
+    padding-left: 1.5em;
+    color: var(--blueColor);
+  }
+
+  .contenedor-imagen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--fondo);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .contenedor-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   :root {

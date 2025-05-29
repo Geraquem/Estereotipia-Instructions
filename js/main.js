@@ -9,7 +9,7 @@ let cerrado = true;
 function menus() {
     let Desplazamiento_Actual = window.pageYOffset;
 
-    if (Desplazamiento_Actual <= 300) {
+    if (Desplazamiento_Actual <= 100) {
         nav.classList.remove('nav2');
         nav.className = ('nav1');
         nav.style.transition = '1s';
@@ -38,7 +38,6 @@ window.addEventListener('load', function () {
 });
 
 window.addEventListener('scroll', function () {
-    console.log(this.window.pageYOffset);
     menus();
 });
 

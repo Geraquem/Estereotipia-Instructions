@@ -1,14 +1,14 @@
 $(function () {
-    let equipo = $('#equipo').offset().top,
-        servicio = $('#servicio').offset().top,
-        trabajo = $('#trabajo').offset().top,
-        contacto = $('#contacto').offset().top;
+    let cuadricula = $('#cuadricula').offset().top,
+        competitivo = $('#competitivo').offset().top,
+        auna = $('#auna').offset().top,
+        identidades = $('#identidades').offset().top;
 
     window.addEventListener('resize', function () {
-        let equipo = $('#equipo').offset().top,
-            servicio = $('#servicio').offset().top,
-            trabajo = $('#trabajo').offset().top,
-            contacto = $('#contacto').offset().top;
+        let cuadricula = $('#cuadricula').offset().top,
+            competitivo = $('#competitivo').offset().top,
+            auna = $('#auna').offset().top,
+            identidades = $('#identidades').offset().top;
     });
 
     $('#enlace-inicio').on('click', function (e) {
@@ -18,31 +18,31 @@ $(function () {
         }, 600);
     });
 
-    $('#enlace-equipo').on('click', function (e) {
+    $('#enlace-cuadricula').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: equipo - 100
+            scrollTop: cuadricula - 80
         }, 600);
     });
 
-    $('#enlace-servicio').on('click', function (e) {
+    $('#enlace-competitivo').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: servicio - 100
+            scrollTop: competitivo - 80
         }, 600);
     });
-    
-    $('#enlace-trabajo').on('click', function (e) {
+
+    $('#enlace-auna').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: trabajo - 100
+            scrollTop: auna - 80
         }, 600);
     });
-    
-    $('#enlace-contacto').on('click', function (e) {
+
+    $('#enlace-identidades').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: contacto - 100
+            scrollTop: identidades - 80
         }, 600);
     });
 });
