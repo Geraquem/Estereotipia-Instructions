@@ -3,6 +3,7 @@
   --softOrangeColor: #fcd293;
   --blueColor: #346373;
   --white: #fff;
+  --black: #000;
   --fondo: #f2f2f2;
   --titulos: 33px;
   --margenes: 60px;
@@ -29,26 +30,24 @@ img {
 /***************************************************************** Header ******************************************************************************************************/
 header {
   width: 100%;
-  background: var(--orangeColor)
 }
 
 nav {
   width: 100%;
   position: fixed;
   height: 80px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 }
 
 .nav1 {
-  background: var(--orangeColor);
   height: 80px;
+  height: 50px;
   color: var(--blueColor);
 }
 
 .nav2 {
   background: var(--fondo);
   color: var(--blueColor);
-  height: 80px;
+  height: 50px;
 }
 
 .contenedor-nav {
@@ -81,7 +80,7 @@ nav .enlaces a:hover {
 
 .logo,
 .logo img {
-  height: 70px;
+  height: 40px;
 }
 
 .icono {
@@ -93,13 +92,15 @@ nav .enlaces a:hover {
 
 /***************************************************************** Main ******************************************************************************************************/
 #nav {
-  position: fixed; /* o relative si no quieres que se mantenga al hacer scroll */
+  position: fixed;
+  /* o relative si no quieres que se mantenga al hacer scroll */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999; /* asegúrate de que esté por encima de todo */
+  z-index: 9999;
+  /* asegúrate de que esté por encima de todo */
 }
-  
+
 .top {
   position: relative;
   width: 100%;
@@ -110,24 +111,27 @@ nav .enlaces a:hover {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain; /* Asegura que se vea completa */
+  object-fit: contain;
+  /* Asegura que se vea completa */
 }
 
 .overlay {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none; /* para que no bloquee clics en la imagen si es necesario */
+  pointer-events: none;
+  /* para que no bloquee clics en la imagen si es necesario */
 }
 
 .overlay-text {
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 1rem;
 }
@@ -137,56 +141,50 @@ nav .enlaces a:hover {
   height: auto;
   display: block;
   object-fit: contain;
-  margin: 0 auto; 
+  margin: 0 auto;
+}
+
+.sketch_small img {
+  width: 80%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .textos {
   width: 100%;
   height: 100%;
-  
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   color: var(--blueColor);
   overflow: hidden;
-  text-align: left;
 }
 
-.descriptions{
+.descriptions {
   width: 90%;
 }
 
-.textos>h1 {
-  font-size: 80px;
-  margin-bottom: 30px;
-}
-
-.textos p {
-  font-size: 28px;
-}
-
-.description1 {
+.descriptions>p {
   font-size: 20px;
-  font-weight: 300;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.description2 {
+.desc_top {
+  margin-top: 20px;
+}
+
+.desc_cursive {
   font-weight: 600;
   font-style: italic;
   margin-bottom: 10px;
 }
 
-.description3 {
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 40px;
-}
-
-.second_part{
-  padding:20px;
+.second_part {
+  padding: 20px;
   width: 100%;
   text-align: center;
   background: var(--orangeColor);
@@ -224,33 +222,21 @@ nav .enlaces a:hover {
   padding-top: 40px;
   padding-bottom: 10px;
   max-width: 1000px;
-  text-align: left;
   overflow: hidden;
+}
+
+.contenedor>h3 {
+  text-align: center;
 }
 
 .contenedor_text {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   color: var(--blueColor);
   overflow: hidden;
-  text-align: left;
-}
-
-.contenedor h3 {
-  font-size: var(--titulos);
-  color: var(--blueColor);
-  margin-bottom: var(--espacios);
-}
-
-.contenedor h4 {
-  font-size: 18px;
-  color: var(--blueColor);
-  margin-bottom: 15px;
-  font-weight: 100;
 }
 
 .contenedor p {
@@ -258,6 +244,14 @@ nav .enlaces a:hover {
   margin-bottom: 15px;
   font-weight: 100;
   color: var(--blueColor);
+}
+
+.contenedor_text p.players_list {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 strong {
@@ -274,8 +268,13 @@ em {
   margin-bottom: 20px;
 }
 
+
+.contenedor-lista p {
+  color: var(--blueColor);
+  margin-bottom: 10px;
+}
+
 .contenedor-lista ul li {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -427,16 +426,17 @@ footer {
 @media screen and (max-width:700px) {
 
   .nav1 {
-    background: var(--orangeColor);
     height: 50px;
     color: var(--orangeColor);
   }
 
   .nav2 {
+    background: var(--blueColor);
     color: var(--orangeColor);
   }
 
   .icono {
+    color: var(--white);
     display: block;
     cursor: pointer;
   }
@@ -481,7 +481,6 @@ footer {
     padding-top: 40px;
     padding-bottom: 10px;
     max-width: 1000px;
-    text-align: center;
     overflow: hidden;
   }
 
@@ -491,30 +490,14 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     color: var(--blueColor);
     overflow: hidden;
-    text-align: left;
   }
 
   .contenedor h3 {
     font-size: var(--titulos);
     color: var(--blueColor);
     margin-bottom: var(--espacios);
-  }
-
-  .contenedor h4 {
-    font-size: 18px;
-    color: var(--blueColor);
-    margin-bottom: 15px;
-    font-weight: 100;
-  }
-
-  .contenedor p {
-    font-size: var(--subtitulos);
-    margin-bottom: 15px;
-    font-weight: 100;
-    color: var(--blueColor);
   }
 
   .contenedor-lista {
@@ -524,14 +507,18 @@ footer {
   }
 
   .contenedor-lista ul li {
-    font-size: var(--subtitulos);
     margin-bottom: 10px;
+    font-size: 20px;
   }
 
   .contenedor-lista ul {
     list-style-position: outside;
     padding-left: 1.5em;
     color: var(--blueColor);
+  }
+
+  .contenedor-lista {
+    font-size: 16px;
   }
 
   .contenedor-imagen {
