@@ -5,7 +5,7 @@
   --white: #fff;
   --black: #000;
   --fondo: #f2f2f2;
-  --titulos: 33px;
+  --titulos: 30px;
   --margenes: 60px;
   --espacios: 20px;
   --espacios-contenido: 45px;
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background: var(--fondo);
 }
 
@@ -67,7 +67,6 @@ nav .enlaces a {
   margin-right: 10px;
   white-space: nowrap;
   font-size: 18px;
-  font-weight: 300;
   text-decoration: none;
   border-bottom: 3px solid transparent;
   color: inherit;
@@ -109,9 +108,8 @@ nav .enlaces a:hover {
 
 .top img {
   width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
+  height: 500px;
+  object-fit: cover;
   /* Asegura que se vea completa */
 }
 
@@ -131,8 +129,7 @@ nav .enlaces a:hover {
 
 .overlay-text {
   color: white;
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 80px;
   padding: 1rem;
 }
 
@@ -145,7 +142,7 @@ nav .enlaces a:hover {
 }
 
 .sketch_small img {
-  width: 80%;
+  width: 40%;
   height: auto;
   display: block;
   object-fit: contain;
@@ -165,7 +162,10 @@ nav .enlaces a:hover {
 }
 
 .descriptions {
+  margin: auto;
   width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
 }
 
 .descriptions>p {
@@ -193,12 +193,10 @@ nav .enlaces a:hover {
 .description4 {
   font-size: 20px;
   margin-bottom: 5px;
-  font-weight: 100;
 }
 
-.texto_instrucciones {
+.description5 {
   font-size: 20px;
-  font-weight: 100;
 }
 
 .hidden {
@@ -229,6 +227,12 @@ nav .enlaces a:hover {
   text-align: center;
 }
 
+.contenedor h3 {
+  font-size: var(--titulos);
+  color: var(--blueColor);
+  margin-bottom: var(--espacios);
+}
+
 .contenedor_text {
   width: 100%;
   height: 100%;
@@ -242,7 +246,6 @@ nav .enlaces a:hover {
 .contenedor p {
   font-size: 18px;
   margin-bottom: 15px;
-  font-weight: 100;
   color: var(--blueColor);
 }
 
@@ -263,8 +266,12 @@ em {
 }
 
 .contenedor-lista {
+  margin: auto;
   width: 90%;
-  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  max-width: 1000px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
@@ -462,12 +469,21 @@ footer {
     color: #fff;
   }
 
-  .textos>h1 {
-    font-size: 40px;
+  .top img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    /* Asegura que se vea completa */
   }
 
-  .textos p {
-    font-size: 18px;
+.overlay-text {
+  color: white;
+  font-size: 40px;
+  padding: 1rem;
+}
+  .textos>h1 {
+    font-size: 40px;
   }
 
   .content-card {
@@ -494,12 +510,6 @@ footer {
     overflow: hidden;
   }
 
-  .contenedor h3 {
-    font-size: var(--titulos);
-    color: var(--blueColor);
-    margin-bottom: var(--espacios);
-  }
-
   .contenedor-lista {
     width: 90%;
     margin: 0 auto;
@@ -518,7 +528,7 @@ footer {
   }
 
   .contenedor-lista {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .contenedor-imagen {
@@ -537,6 +547,15 @@ footer {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+  }
+
+
+  .sketch_small img {
+    width: 80%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
   }
 
   :root {
