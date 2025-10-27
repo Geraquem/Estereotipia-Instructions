@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mmfsin.estereotipia",
+      "sha256_cert_fingerprints": [
+        "1F:2F:B6:F2:E7:0B:98:8A:3B:21:A5:14:26:EA:0D:50:D4:4A:F2:64:C0:E4:49:44:51:FF:52:A9:85:72:6D:29",
+        "66:15:FE:C6:25:41:3E:DD:17:34:3B:91:B1:70:C8:69:D7:E3:67:B9:1E:E6:15:68:93:4A:AD:C1:24:DE:60:DD"
+      ]
+    }
+  }
+]
