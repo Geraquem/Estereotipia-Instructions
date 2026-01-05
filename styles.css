@@ -563,6 +563,30 @@ footer {
   }
 }
 
+.buy-section {
+  background: var(--orangeColor);
+  padding: 30px 20px;
+}
+
+.btn-comprar {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background: var(--blueColor);
+  color: var(--white);
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+
+.btn-comprar:hover {
+  background: #2a505c;
+  transform: scale(1.05);
+}
+
 /****************** Preloader ******************/
 
 .lds-ring {
