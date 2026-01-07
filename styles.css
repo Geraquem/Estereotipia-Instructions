@@ -269,10 +269,8 @@ em {
   margin: auto;
   width: 90%;
   padding-top: 40px;
-  padding-bottom: 10px;
   max-width: 1000px;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 
@@ -294,7 +292,6 @@ em {
 .contenedor-total {
   width: 100%;
   height: auto;
-  background: var(--fondo);
 }
 
 .contenedor-imagen {
@@ -304,7 +301,7 @@ em {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  background: var(--fondo);
+  background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
   overflow: hidden;
@@ -312,6 +309,7 @@ em {
 
 .contenedor-imagen img {
   max-width: 100%;
+  background-color: transparent;
   max-height: 100%;
   object-fit: contain;
 }
@@ -415,17 +413,23 @@ em {
 }
 
 footer {
-  background: var(--orangeColor);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--white);
 }
 
-.marca-logo {
-  width: 20%;
-  margin: auto;
-  margin-bottom: var(--espacios);
+.footer.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
 }
 
-.marca-logo img {
-  width: 100%;
+.footer.contenedor a img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
 }
 
 /***************************************************************** Responsive ******************************************************************************************************/
@@ -477,11 +481,12 @@ footer {
     /* Asegura que se vea completa */
   }
 
-.overlay-text {
-  color: white;
-  font-size: 40px;
-  padding: 1rem;
-}
+  .overlay-text {
+    color: white;
+    font-size: 40px;
+    padding: 1rem;
+  }
+
   .textos>h1 {
     font-size: 40px;
   }
@@ -506,8 +511,15 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: var(--blueColor);
     overflow: hidden;
+  }
+
+  .contenedor_text .competitive_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .contenedor-lista {
@@ -537,7 +549,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--fondo);
+    background-color: transparent;
     padding-top: 15px;
     padding-bottom: 15px;
     overflow: hidden;
@@ -546,9 +558,9 @@ footer {
   .contenedor-imagen img {
     max-width: 100%;
     max-height: 100%;
+    background-color: transparent;
     object-fit: contain;
   }
-
 
   .sketch_small img {
     width: 80%;
