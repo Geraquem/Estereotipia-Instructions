@@ -1,15 +1,15 @@
 $(function () {
     let cuadricula = $('#cuadricula').offset().top,
-        competitivo = $('#competitivo').offset().top,
-        auna = $('#auna').offset().top,
-        identidades = $('#identidades').offset().top;
+        todosauna = $('#todosauna').offset().top,
+        identidades = $('#identidades').offset().top,
+        competitivo = $('#competitivo').offset().top;
 
     window.addEventListener('resize', function () {
         let cuadricula = $('#cuadricula').offset().top,
-            competitivo = $('#competitivo').offset().top,
-            auna = $('#auna').offset().top,
-            identidades = $('#identidades').offset().top;
-    });
+            todosauna = $('#todosauna').offset().top,
+            identidades = $('#identidades').offset().top,
+            competitivo = $('#competitivo').offset().top;
+        });
 
     $('#enlace-inicio').on('click', function (e) {
         e.preventDefault();
@@ -25,17 +25,10 @@ $(function () {
         }, 600);
     });
 
-    $('#enlace-competitivo').on('click', function (e) {
+    $('#enlace-todosauna').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: competitivo - 50
-        }, 600);
-    });
-
-    $('#enlace-auna').on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: auna - 50
+            scrollTop: todosauna - 50
         }, 600);
     });
 
@@ -43,6 +36,13 @@ $(function () {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: identidades - 50
+        }, 600);
+    });
+
+    $('#enlace-competitivo').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: competitivo - 50
         }, 600);
     });
 });
