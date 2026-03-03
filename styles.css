@@ -575,29 +575,47 @@ footer {
   }
 }
 
-.buy-section {
-  background: var(--orangeColor);
-  padding: 30px 20px;
-}
-
-.btn-comprar {
-  display: inline-block;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  background: var(--blueColor);
-  color: var(--white);
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 22px;
   border-radius: 8px;
-  text-decoration: none;
   font-size: 18px;
-  font-weight: bold;
+  text-decoration: none;
+  width: 300px;
   transition: 0.25s ease;
+  gap: 12px; /* espacio entre icono y texto */
 }
 
-.btn-comprar:hover {
-  background: #2a505c;
-  transform: scale(1.05);
+/* Botón Amazon */
+.btn-amazon {
+  background: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  color: var(--blueColor);
+  border: 2px solid #ff9900;
 }
+
+/* Botón Web */
+.btn-web {
+  background: var(--blueColor);
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+/* Iconos de los botones */
+.btn-icon {
+  height: 18px;
+  width: auto;
+}
+
+/* Iconos de los botones */
+.btn-icon-grisaceo {
+  height: 26px;
+  width: auto;
+}
+
 
 /****************** Preloader ******************/
 
