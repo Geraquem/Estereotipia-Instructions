@@ -31,9 +31,17 @@ function apertura() {
     }
 }
 
+/*
 window.addEventListener('load', function () {
     $('#onload').fadeOut();
     $('body').removeClass('hidden'); 
+    menus();
+});
+*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
     menus();
 });
 
