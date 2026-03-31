@@ -27,6 +27,14 @@ img {
   vertical-align: top;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 50px; /* altura del nav */
+}
+
 /***************************************************************** Header ******************************************************************************************************/
 header {
   width: 100%;
