@@ -303,23 +303,22 @@ em {
 }
 
 .contenedor-imagen {
-  width: 50%;
-  height: auto;
-  display: block;
+  width: 100%; /* que ocupe todo el ancho del contenedor */
+  max-width: 600px; /* ancho máximo uniforme para todas las imágenes */
   margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedor-imagen img {
-  max-width: 100%;
-  background-color: transparent;
-  max-height: 100%;
+   width: 100%; /* que escale al ancho del contenedor */
+  height: auto;
+  max-height: none; /* quitar límite de altura */
   object-fit: contain;
+  display: block;
 }
 
 .after::after {
